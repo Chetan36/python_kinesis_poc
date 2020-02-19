@@ -3,7 +3,7 @@ import time
 
 kinesis_stream_name = 'test_stream'
 
-kinesis_client = boto3.client('kinesis', region_name='us-east-1', aws_access_key_id='AKIAWR6VSVBYVBDOPQGN', aws_secret_access_key='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')
+kinesis_client = boto3.client('kinesis', region_name='us-east-1', aws_access_key_id='<AWS_ACCESS_KEY_ID>', aws_secret_access_key='<AWS_SECRET_ACCESS_KEY>')
 response = kinesis_client.describe_stream(StreamName=kinesis_stream_name)
 my_shard_id = response['StreamDescription']['Shards'][0]['ShardId']
 
@@ -24,7 +24,7 @@ while 'NextShardIterator' in record_response:
 
 # from kinesis.consumer import KinesisConsumer
 
-# boto3_session = boto3.Session(region_name='us-east-1', aws_access_key_id='AKIAWR6VSVBYVBDOPQGN', aws_secret_access_key='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', aws_session_token=boto3.session.Session())
+# boto3_session = boto3.Session(region_name='us-east-1', aws_access_key_id='<AWS_ACCESS_KEY_ID>', aws_secret_access_key='<AWS_SECRET_ACCESS_KEY>', aws_session_token=boto3.session.Session())
 
 # kinesis_stream_name = 'test_stream'
 # consumer = KinesisConsumer(stream_name=kinesis_stream_name, boto3_session=boto3_session)
