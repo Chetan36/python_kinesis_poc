@@ -7,7 +7,7 @@ import time
 
 kinesis_stream_name = 'test_stream'
 
-kinesis_client = boto3.client('kinesis', region_name='us-east-1', aws_access_key_id='AKIAWR6VSVBYVBDOPQGN', aws_secret_access_key='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')
+kinesis_client = boto3.client('kinesis', region_name='us-east-1', aws_access_key_id='<AWS_ACCESS_KEY_ID>', aws_secret_access_key='<AWS_SECRET_ACCESS_KEY>')
 
 def push_data_to_stream(status, message, data, property_timestamp):
     payload = {
