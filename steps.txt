@@ -1,12 +1,12 @@
 1. Create an aws iam user, providing programmatic access and grant full kinesis, firehose, analytics and lambda access
 kinesis_client
-Access Key ID - AKIAWR6VSVBYVBDOPQGN
-Secret Access Key - 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
+Access Key ID - <ACCESS_KEY_ID>
+Secret Access Key - <SECRET_ACCESS_KEY>
 Default Region - us-east-1
 
 2. Set the credentials in `~/.aws/credentials` file
 [default]
-aws_access_key_id = AKIAWR6VSVBYVBDOPQGN
-aws_secret_access_key = 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
+Access Key ID - <ACCESS_KEY_ID>
+Secret Access Key - <SECRET_ACCESS_KEY>
 
 3. Install awscli and then `aws configure`
